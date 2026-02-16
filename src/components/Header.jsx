@@ -45,7 +45,6 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#5E7153] shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-        {/* Logo */}
         <a href="#" className="block hover:opacity-90 transition-opacity duration-300">
           <img
             src="/PrataapVatikaLogoGol.png"
@@ -54,7 +53,6 @@ export default function Header() {
           />
         </a>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-12 absolute left-1/2 transform -translate-x-1/2 font-montserrat tracking-[0.15em] text-xs font-light">
           <div className="NavBarBox flex items-center gap-8">
             {navItems.map((item) => (
@@ -68,7 +66,6 @@ export default function Header() {
                   <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#C5A059] transition-all duration-300 group-hover:w-full opacity-80"></span>
                 </a>
 
-                {/* Subtle Separator */}
                 <div className="h-4 w-0.5 bg-white/50 ml-8 transform group-last:hidden"></div>
               </div>
             ))}
@@ -85,9 +82,7 @@ export default function Header() {
           </a>
         </nav>
 
-        {/* Right Section: Social Icons (Desktop) & Mobile Menu Button */}
         <div className="flex items-center gap-6">
-          {/* Desktop Social Icons */}
           <div className="hidden md:flex items-center gap-6">
             {socialLinks.map((social) => (
               <a
@@ -108,7 +103,6 @@ export default function Header() {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-white/90 hover:text-white focus:outline-none ml-4 transition-colors duration-300"
             onClick={toggleMenu}
@@ -130,7 +124,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Navigation Drawer */}
       <MobileMenu
         isMenuOpen={isMenuOpen}
         navItems={navItems}
