@@ -86,12 +86,12 @@ export default function Testimonials() {
                     ))}
                 </div>
 
-                {/* View All Button */}
+                {/* View All Button
                 <div className="mt-16 text-center">
                     <a href="#" className="inline-flex items-center justify-center px-8 py-3 font-montserrat text-sm font-semibold text-[#5E7153] transition-all duration-200 bg-transparent border-2 border-[#5E7153] rounded-full hover:bg-[#5E7153] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5E7153]">
                         Read All Reviews
                     </a>
-                </div>
+                </div> */}
 
             </div>
         </section>
