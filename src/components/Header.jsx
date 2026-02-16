@@ -56,7 +56,7 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-12 absolute left-1/2 transform -translate-x-1/2 font-montserrat tracking-[0.15em] text-xs font-light">
-          <div className="flex items-center gap-8">
+          <div className="NavBarBox flex items-center gap-8">
             {navItems.map((item) => (
               <div key={item.id} className="flex items-center group">
                 <a
@@ -65,11 +65,11 @@ export default function Header() {
                   className="relative text-white/90 hover:text-white transition-colors duration-300 uppercase py-1"
                 >
                   <span className="relative z-10">{item.label}</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#C5A059] transition-all duration-300 group-hover:w-full opacity-80"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#C5A059] transition-all duration-300 group-hover:w-full opacity-80"></span>
                 </a>
 
                 {/* Subtle Separator */}
-                <div className="h-4 w-px bg-white/20 ml-8 transform rotate-12 group-last:hidden"></div>
+                <div className="h-4 w-0.5 bg-white/50 ml-8 transform group-last:hidden"></div>
               </div>
             ))}
           </div>
