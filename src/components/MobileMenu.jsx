@@ -1,50 +1,35 @@
-export default function MobileMenu({ isMenuOpen, navItems, socialLinks, handleNavClick }) {
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+export default function MobileMenu({ isMenuOpen, navItems, handleNavClick }) {
     return (
         <div
-            className={`md:hidden absolute top-full left-0 w-full bg-[#5E7153]/95 backdrop-blur-md border-t border-white/10 shadow-xl transition-all duration-500 ease-in-out z-40 overflow-hidden ${isMenuOpen ? 'max-h-screen opacity-100 py-8' : 'max-h-0 opacity-0'
+            className={`md:hidden absolute top-full left-0 w-full bg-[#5E7153] border-t border-white/10 shadow-2xl transition-all duration-500 ease-in-out z-40 overflow-hidden ${isMenuOpen ? 'h-[calc(100vh-80px)] opacity-100' : 'h-0 opacity-0'
                 }`}
         >
-            <nav className="flex flex-col items-center gap-8 font-montserrat">
+            <nav className="flex flex-col items-center justify-center h-full gap-10 pb-20">
                 {navItems.map((item) => (
-                    <a
+                    <Link
                         key={item.id}
-                        href={item.href}
+                        to={item.href}
                         onClick={() => handleNavClick(item.id)}
-                        className="text-white/90 text-sm tracking-[0.2em] font-light hover:text-white transition-all duration-300 uppercase hover:tracking-[0.25em]"
+                        className="font-playfair text-3xl text-[#FAF9F6] tracking-wide hover:text-[#C5A059] hover:scale-105 transition-all duration-300"
                     >
                         {item.label}
-                    </a>
+                    </Link>
                 ))}
 
+                <div className="w-12 h-0.5 bg-[#C5A059]/30 rounded-full"></div>
+
                 <a
-                    href="#contact"
-                    className="relative px-10 py-3 mt-2 overflow-hidden bg-black/30 hover:bg-[#C5A059] border border-white/20 hover:border-transparent transition-all duration-300 group"
+                    href="https://wa.me/917543959399"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-8 py-3 border border-[#C5A059] rounded-full font-montserrat text-sm font-semibold tracking-widest text-[#FAF9F6] hover:bg-[#C5A059] hover:text-white transition-all duration-300 uppercase"
                     onClick={() => handleNavClick('contact')}
                 >
-                    <span className="relative z-10 text-white text-xs tracking-[0.2em] uppercase font-medium group-hover:text-white transition-colors duration-300">
-                        Contact Us
-                    </span>
+                    Contact Us
                 </a>
-
-                {/* <div className="flex items-center gap-8 mt-6">
-                    {socialLinks.map((social) => (
-                        <a
-                            key={social.id}
-                            href={social.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="transform hover:-translate-y-1 transition-transform duration-300 opacity-80 hover:opacity-100"
-                            title={social.label}
-                            aria-label={social.label}
-                        >
-                            <img
-                                src={social.icon}
-                                alt={social.label}
-                                className="w-5 h-5 object-contain filter brightness-0 invert drop-shadow-sm"
-                            />
-                        </a>
-                    ))}
-                </div> */}
             </nav>
         </div>
     )

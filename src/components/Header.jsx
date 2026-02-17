@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import MobileMenu from './MobileMenu'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const location = useLocation();
 
   // Handle scroll effect
   useEffect(() => {
@@ -15,9 +17,9 @@ export default function Header() {
   }, [])
 
   const navItems = [
-    { id: 'home', label: 'Home', href: '#home' },
-    { id: 'events', label: 'Events', href: '#events' },
-    { id: 'gallery', label: 'Gallery', href: '#gallery' },
+    { id: 'home', label: 'Home', href: '/' },
+    { id: 'events', label: 'Events', href: '/events' },
+    { id: 'gallery', label: 'Gallery', href: '/#gallery' },
   ]
 
   const socialLinks = [
@@ -55,29 +57,32 @@ export default function Header() {
         {/* Left: Navigation Links (Desktop) */}
         <nav className="hidden md:flex items-center gap-10">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.id}
-              href={item.href}
-              className="font-montserrat text-xs tracking-[0.2em] font-medium text-white hover:text-[#C5A059] transition-colors uppercase"
+              to={item.href}
+              className={`font-montserrat text-xs tracking-[0.2em] font-medium transition-colors uppercase ${location.pathname === item.href ? 'text-[#C5A059]' : 'text-white hover:text-[#C5A059]'
+                }`}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         {/* Center: Logo */}
-        <a href="#" className="transform hover:scale-105 transition-transform duration-300">
+        <Link to="/" className="transform hover:scale-105 transition-transform duration-300">
           <img
             src="/PrataapVatikaLogoGol.png"
             alt="Pratap Vatika"
             className={`w-auto object-contain transition-all duration-500 ${scrolled ? 'h-14' : 'h-20'}`}
           />
-        </a>
+        </Link>
 
         {/* Right: CTA & Mobile Menu */}
         <div className="flex items-center gap-6">
           <a
-            href="#contact"
+            href="https://wa.me/917543959399"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-flex items-center justify-center px-6 py-2.5 
                        border border-[#C5A059] rounded-full 
                        font-montserrat text-xs font-semibold tracking-widest text-white 

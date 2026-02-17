@@ -29,7 +29,7 @@ export default function Hero() {
 
                         <div className="flex items-center mt-8 space-x-3 sm:space-x-4">
                             <a
-                                href="#explore"
+                                href="/events"
                                 title="Explore"
                                 className="
                     inline-flex
