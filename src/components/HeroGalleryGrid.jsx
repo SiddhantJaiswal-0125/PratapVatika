@@ -83,12 +83,12 @@ export default function HeroGalleryGrid() {
                     </div>
 
                     {/* Right Side Grid (2x2) */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full h-full">
+                    <div className="grid grid-cols-2 gap-4 w-full h-full">
                         {items.slice(1).map((item, index) => (
                             <div
                                 key={item.id}
                                 onClick={() => handleImageSwap(index)}
-                                className="relative group overflow-hidden h-[250px] lg:h-auto cursor-pointer bg-gray-100"
+                                className="relative group overflow-hidden h-[180px] sm:h-[250px] lg:h-auto cursor-pointer bg-gray-100"
                             >
                                 <img
                                     src={item.image}

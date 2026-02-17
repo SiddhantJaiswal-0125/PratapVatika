@@ -26,7 +26,7 @@ export default function MobileMenu({ isMenuOpen, navItems, socialLinks, handleNa
                     </span>
                 </a>
 
-                <div className="flex items-center gap-8 mt-6">
+                {/* <div className="flex items-center gap-8 mt-6">
                     {socialLinks.map((social) => (
                         <a
                             key={social.id}
@@ -44,7 +44,7 @@ export default function MobileMenu({ isMenuOpen, navItems, socialLinks, handleNa
                             />
                         </a>
                     ))}
-                </div>
+                </div> */}
             </nav>
         </div>
     )
