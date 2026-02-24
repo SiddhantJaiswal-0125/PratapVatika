@@ -23,7 +23,7 @@ export default function Hero() {
                             <span className="font-playfair italic font-normal text-6xl sm:text-7xl md:text-8xl text-[#C5A059]">Pratap Vatika</span>
                         </p>
                         <p className="mt-8 font-montserrat text-base font-light leading-7 text-white/70 max-w-lg">
-                            Discover the enchanting beauty of the <strong>Saranda Forest in Jharkhand</strong>. As the premier luxury resort in the "Land of Seven Hundred Hills," Pratap Vatika offers a serene escape amidst India's largest Sal forest.
+                            Discover the enchanting beauty of the <strong>Saranda Forest in Jharkhand</strong>. As the premier luxury resort in the "Land of Seven Hundred Hills," <span className="text-[#C5A059] font-medium">Pratap Vatika</span> offers a serene escape amidst India's largest Sal forest.
                         </p>
                         <p className="mt-8 font-montserrat text-xl font-medium text-[#C5A059]">Plan your trip today!</p>
 

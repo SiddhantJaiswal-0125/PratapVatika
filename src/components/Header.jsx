@@ -7,7 +7,6 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation();
 
-  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
@@ -19,7 +18,7 @@ export default function Header() {
   const navItems = [
     { id: 'home', label: 'Home', href: '/' },
     { id: 'events', label: 'Events', href: '/events' },
-    { id: 'gallery', label: 'Gallery', href: '/#gallery' },
+    { id: 'gallery', label: 'Gallery', href: '/gallery' },
   ]
 
   const socialLinks = [
@@ -50,7 +49,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out border-b border-white/10
-      ${scrolled ? 'bg-[#5E7153]/95 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-6'}`}
+      ${scrolled || location.pathname === '/gallery' ? 'bg-[#5E7153]/95 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-6'}`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
 

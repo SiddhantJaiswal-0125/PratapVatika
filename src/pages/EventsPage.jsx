@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import SlidingBanner from '../components/SlidingBanner';
 
 const eventsContent = [
     {
@@ -14,7 +15,7 @@ const eventsContent = [
         id: 'celebrations',
         label: 'CELEBRATIONS',
         title: "Where Generations Meet",
-        description: "From milestone birthdays to silver anniversaries, every family gathering deserves a setting as timeless as your memories. Pratap Vatika provides the perfect backdrop for laughter, joy, and the coming together of hearts across generations.",
+        description: <>From milestone birthdays to silver anniversaries, every family gathering deserves a setting as timeless as your memories. <span className="text-[#C5A059] font-medium">Pratap Vatika</span> provides the perfect backdrop for laughter, joy, and the coming together of hearts across generations.</>,
         image: "/Events-Images/Garden Celebrations.png",
         thumbnail: "/Events-Images/Garden Banquet.png",
         layout: "left"
@@ -132,6 +133,8 @@ export default function EventsPage() {
                     </h1>
                 </div>
             </div>
+
+            <SlidingBanner />
 
             {/* Tagline Interstitial */}
             <div className="bg-[#FAF9F6] py-24 text-center px-4">

@@ -64,12 +64,12 @@ export default function Footer() {
                             <img src="/PrataapVatikaLogoWhite.png" alt="Pratap Vatika Logo" className="h-28 w-auto mb-4" />
 
 
-                            <h3 className="font-playfair text-3xl font-bold tracking-wider mb-1">Pratap Vatika</h3>
+                            <h3 className="font-playfair text-3xl font-bold tracking-wider mb-1 text-[#C5A059]">Pratap Vatika</h3>
                             <p className="font-playfair italic text-sm text-gray-400 mb-6">Luxury in the Heart of Nature</p>
                         </div>
 
                         <p className="font-montserrat text-gray-300 text-sm leading-relaxed max-w-sm mx-auto md:mx-0">
-                            A serene retreat nestled in nature, where lush greenery and open landscapes come together to create a peaceful and unforgettable experience at Pratap Vatika, near Saranda Forest, Jharkhand.
+                            A serene retreat nestled in nature, where lush greenery and open landscapes come together to create a peaceful and unforgettable experience at <span className="text-[#C5A059] font-medium">Pratap Vatika</span>, near Saranda Forest, Jharkhand.
                         </p>
                     </div>
 
@@ -100,7 +100,7 @@ export default function Footer() {
                             <li className="flex flex-col md:flex-row items-center md:items-start gap-3">
                                 <span className="font-semibold text-white shrink-0">Address:</span>
                                 <a href="https://maps.app.goo.gl/RtysGCNnSVU7EHDq9?g_st=iw" target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A059] transition-colors">
-                                    Pratap Vatika Jungle Resort,<br />9599+HW, Gopipur,<br />Jharkhand, India
+                                    <span className="text-[#C5A059] font-medium">Pratap Vatika</span> Jungle Resort,<br />9599+HW, Gopipur,<br />Jharkhand, India
                                 </a>
                             </li>
                         </ul>

@@ -31,7 +31,7 @@ export default function Intro() {
                             </p>
 
                             <p>
-                                Wake up to the soothing sounds of birds, enjoy quiet mornings under the trees, and spend your days exploring the scenic trails and natural charm of <strong className="font-semibold text-[#5E7153]">Saranda Forest</strong>. Whether you're planning a relaxing weekend getaway, a family vacation, or a nature escape in West Singhbhum, Pratap Vatika provides a warm and authentic forest stay.
+                                Wake up to the soothing sounds of birds, enjoy quiet mornings under the trees, and spend your days exploring the scenic trails and natural charm of <strong className="font-semibold text-[#5E7153]">Saranda Forest</strong>. Whether you're planning a relaxing weekend getaway, a family vacation, or a nature escape in West Singhbhum, <span className="text-[#C5A059] font-medium">Pratap Vatika</span> provides a warm and authentic forest stay.
                             </p>
 
                             <div className="font-playfair font-bold text-xl md:text-2xl text-gray-900 pt-4 border-l-4 border-[#C5A059] pl-6 md:ml-0 inline-block text-left">

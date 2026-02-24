@@ -3,7 +3,7 @@ import React from 'react';
 const testimonials = [
     {
         id: 1,
-        content: "The serenity of Saranda Forest combined with the luxury of Pratap Vatika made our weekend unforgettable. The service was impeccable and the food was divine. A true jungle paradise.",
+        content: <>The serenity of Saranda Forest combined with the luxury of <span className="text-[#C5A059] font-medium">Pratap Vatika</span> made our weekend unforgettable. The service was impeccable and the food was divine. A true jungle paradise.</>,
         author: "Anjali Sharma",
         role: "Nature Enthusiast",
         rating: 5
