@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
     return (
@@ -28,8 +29,8 @@ export default function Hero() {
                         <p className="mt-8 font-montserrat text-xl font-medium text-[#C5A059]">Plan your trip today!</p>
 
                         <div className="flex items-center mt-8 space-x-3 sm:space-x-4">
-                            <a
-                                href="/events"
+                            <Link
+                                to="/events"
                                 title="Explore"
                                 className="
                     inline-flex
@@ -52,7 +53,7 @@ export default function Hero() {
                                 role="button"
                             >
                                 Explore
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
