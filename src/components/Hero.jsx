@@ -6,11 +6,11 @@ export default function Hero() {
         <div className="relative pt-48 pb-12 bg-black xl:pt-60 sm:pb-16 lg:pb-32 xl:pb-48 2xl:pb-56">
             <div className="absolute inset-0">
                 <img
-                    className="object-cover w-full h-full opacity-60"
+                    className="object-cover w-full h-full opacity-50"
                     src="/HeroElementBaclground.png"
                     alt="Jungle Resort Background"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent"></div>
             </div>
 
             <div className="relative">
@@ -20,13 +20,15 @@ export default function Hero() {
                             Experience Saranda Forest, Jharkhand
                         </h1>
                         <p className="mt-6 tracking-tighter text-white">
-                            <span className="font-montserrat font-normal text-5xl sm:text-6xl md:text-7xl">Welcome to</span><br />
-                            <span className="font-playfair italic font-normal text-6xl sm:text-7xl md:text-8xl text-[#C5A059]">Pratap Vatika</span>
+                            <span className="font-montserrat font-normal text-5xl sm:text-6xl md:text-6xl">Welcome to</span><br />
+                            <span className="font-playfair italic font-normal text-6xl sm:text-7xl md:text-6xl text-[#C5A059]">Pratap Vatika Resort</span>
                         </p>
                         <p className="mt-8 font-montserrat text-base font-light leading-7 text-white/70 max-w-lg">
                             Discover the enchanting beauty of the <strong>Saranda Forest in Jharkhand</strong>. As the premier luxury resort in the "Land of Seven Hundred Hills," <span className="text-[#C5A059] font-medium">Pratap Vatika</span> offers a serene escape amidst India's largest Sal forest.
                         </p>
-                        <p className="mt-8 font-montserrat text-xl font-medium text-[#C5A059]">Plan your trip today!</p>
+                        <p className="mt-8 font-montserrat text-xl font-medium text-[#C5A059]">Plan your trip today! <br></br><a href="tel:+917543959399" className="hover:text-[#C5A059] transition-colors text-base font-medium flex items-center justify-center sm:justify-start gap-2">
+                                            <span> Call us at +91 75439 59399</span>
+                                        </a></p>
 
                         <div className="flex items-center mt-8 space-x-3 sm:space-x-4">
                             <Link
