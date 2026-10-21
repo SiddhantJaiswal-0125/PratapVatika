@@ -52,7 +52,7 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 className="bg-white text-[#5E7153] px-6 py-3.5 rounded-full flex items-center justify-center lg:justify-start gap-4 hover:bg-gray-100 transition-all duration-300 group w-fit mx-auto lg:mx-0 shadow-lg hover:shadow-white/20"
                             >
-                                <img src="/instagram.png" alt="Instagram" className="w-6 h-6" />
+                                <img src="/Instagram.png" alt="Instagram" className="w-6 h-6" />
                                 <span className="font-montserrat font-bold text-base text-[#5E7153]">Instagram</span>
                                 <span className="bg-[#5E7153] rounded-full p-1.5 ml-1 group-hover:translate-x-1 transition-transform">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
