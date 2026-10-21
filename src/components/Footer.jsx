@@ -38,14 +38,47 @@ export default function Footer() {
                                 className="bg-white text-[#5E7153] px-6 py-3.5 rounded-full flex items-center justify-center lg:justify-start gap-4 hover:bg-gray-100 transition-all duration-300 group w-fit mx-auto lg:mx-0 shadow-lg hover:shadow-white/20"
                             >
                                 <img src="/WhatsappGreen.png" alt="Whatsapp" className="w-6 h-6" />
-                                <span className="font-montserrat font-bold text-base text-[#5E7153]">Chat on WhatsApp</span>
+                                <span className="font-montserrat font-bold text-base text-[#5E7153]">WhatsApp</span>
                                 <span className="bg-[#5E7153] rounded-full p-1.5 ml-1 group-hover:translate-x-1 transition-transform">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                     </svg>
                                 </span>
                             </a>
+                            <br></br>
+                             <a
+                                href="https://www.instagram.com/pratapvatika?cplk=d3RwMWl6YmxuNnNr"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white text-[#5E7153] px-6 py-3.5 rounded-full flex items-center justify-center lg:justify-start gap-4 hover:bg-gray-100 transition-all duration-300 group w-fit mx-auto lg:mx-0 shadow-lg hover:shadow-white/20"
+                            >
+                                <img src="/instagram.png" alt="Instagram" className="w-6 h-6" />
+                                <span className="font-montserrat font-bold text-base text-[#5E7153]">Instagram</span>
+                                <span className="bg-[#5E7153] rounded-full p-1.5 ml-1 group-hover:translate-x-1 transition-transform">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </span>
+                            </a>
+                            
+                            <br></br>
+                             <a
+                                href="https://www.facebook.com/people/Pratap-Vatika/61591851260468"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white text-[#5E7153] px-6 py-3.5 rounded-full flex items-center justify-center lg:justify-start gap-4 hover:bg-gray-100 transition-all duration-300 group w-fit mx-auto lg:mx-0 shadow-lg hover:shadow-white/20"
+                            >
+                                <img src="/facebookblue.png" alt="Facebook" className="w-6 h-6" />
+                                <span className="font-montserrat font-bold text-base text-[#5E7153]">Facebook</span>
+                                <span className="bg-[#5E7153] rounded-full p-1.5 ml-1 group-hover:translate-x-1 transition-transform">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                    </svg>
+                                </span>
+                            </a>
+                            
                         </div>
+                        
                     </div>
 
                     {/* Spacer for Desktop */}
